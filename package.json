@@ -1,0 +1,26 @@
+{
+  "name": "web-from-folder",
+  "description": "A small node js application, that deliver html app from a local folder",
+  "version": "0.0.1",
+  "author": "BlueSkyFish <blueskyfish@blueskyfish.de>",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "help": ""
+  },
+  "keywords": [
+    "web",
+    "folder",
+    "nodejs",
+    "browser"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blueskyfish/web-from-folder.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.13.0",
+    "strftime": "0.9.2"
+  }
+}
