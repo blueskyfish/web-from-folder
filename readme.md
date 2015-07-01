@@ -1,7 +1,8 @@
 
 # Web From Folder
 
-> A small node js application, that deliver html app from a local folder.
+> A small node js application, that deliver html app from a local folder. It may also for the easy or Try testing
+> any HTML Spnipptes be used. There are the internal directory `web`.
 
 
 ## Requirement
@@ -32,3 +33,9 @@
 
 * port: the port number, where the wff app is listen. The default value is `3000`
 * path: the folder, which should deliver as web content. The default value is `web`.
+
+## Next Steps
+
+* add a index list of files for folder without html content
+* write some unit tests
+* resolve default javascript and css frameworks, for internal html test snipptes.
