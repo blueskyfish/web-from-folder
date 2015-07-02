@@ -1,6 +1,8 @@
-/**
- * Project: web-from-folder
- */
+#!/usr/bin/env node
+
+//
+// Project: web-from-folder
+//
 
 'use strict';
 
@@ -33,7 +35,10 @@ function getParams() {
   var
     args = Array.prototype.splice.call(process.argv, 2),
     port = num(args[0]) || 3000,
-    path = !num(args[0]) ? args[0] : args[1] || 'web';
+    path = !num(args[0]) ? args[0] : args[1] || process.cwd();
+
+  //log('  port:', port);
+  //log('  dir: ', path);
 
   return {
     port: port,
@@ -57,6 +62,8 @@ function log() {
 }
 
 log(pkg.name, ' version: ', pkg.version);
+log('  port:', args.port);
+log('  dir: ', args.path);
 log('-----------------------------------------------------');
 log('Setup the wff: http://localhost:' + args.port, '->', args.path);
 
